@@ -45,5 +45,14 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+	<!--Add any required keys here-->
+	</dict>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+	<key>GOOGLE_MAPS_API_KEY</key>
+	<string>AIzaSyDfGDts6YsNKEHkd1oT3OL5wzvuveR-6ls</string>
+
 </dict>
 </plist>
