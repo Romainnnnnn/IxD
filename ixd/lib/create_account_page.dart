@@ -93,7 +93,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                   } else {
                     // Passwords don't match, show an error message
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
+                      const SnackBar(
                         content: Text('Passwords do not match'),
                         backgroundColor: Colors.red,
                       ),
@@ -103,7 +103,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                   print('Error creating account: $e');
                 }
               },
-              child: Text('Create Account'),
+              child: const Text('Create Account'),
             ),
           ],
         ),

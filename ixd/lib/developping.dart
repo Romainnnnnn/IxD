@@ -36,15 +36,15 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
       children: [
         Text(
           'Current Player: $currentPlayer',
-          style: TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 18),
         ),
         Text(
           'Score player 1: $scorePlayer1',
-          style: TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 18),
         ),
         Text(
           'Score player 2: $scorePlayer2',
-          style: TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 18),
         ),
         for (int i = 0; i < 7; i++)
           Row(
@@ -60,20 +60,20 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
                   ),
                   child: Text(
                   placementP1() + placementP2(),
-                  style: TextStyle(fontSize: 12),
+                  style: const TextStyle(fontSize: 12),
           ),
 
                 ),
             ],
           ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         ElevatedButton(
         onPressed: () {
             _rollDice(currentPlayer);
           },
-          child: Text('Roll the Dice'),
+          child: const Text('Roll the Dice'),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }
@@ -89,136 +89,136 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
 
   Border _getBorder(int rowIndex, int colIndex) {
     if (rowIndex == 0 && colIndex == 0) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 0 && colIndex == 1) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 0 && colIndex == 2) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 0 && colIndex == 3) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 0 && colIndex == 4) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 0 && colIndex == 5) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 0 && colIndex == 6) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right:BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right:BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 1 && colIndex == 0) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 1 && colIndex == 1) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
      if (rowIndex == 1 && colIndex == 2) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 1 && colIndex == 3) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 1 && colIndex == 4) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 1 && colIndex == 5) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)),right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)),right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 1 && colIndex == 6) {
-      return Border(right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 6) {
-      return Border(right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 0) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), left:BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), left:BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 1) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 2) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 3) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 4) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 2 && colIndex == 5) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 3 && colIndex == 1) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)),left: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)),left: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 3 && colIndex == 2) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 3 && colIndex == 3) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 3 && colIndex == 4) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 3 && colIndex == 5) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 3 && colIndex == 6) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     } 
     if (rowIndex == 3 && colIndex == 0) {
-      return Border(left: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(left: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 0) {
-      return Border(left: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(left: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 1) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 2) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 3) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 4) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 5) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 4 && colIndex == 6) {
-      return Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(top: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 5 && colIndex == 6) {
-      return Border(left: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(left: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 6) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), right: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 0) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 1) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 2) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 3) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 4) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     if (rowIndex == 6 && colIndex == 5) {
-      return Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
+      return const Border(bottom: BorderSide(color: Color.fromARGB(255, 173, 5, 5)), top: BorderSide(color: Color.fromARGB(255, 173, 5, 5))); 
     }
     else{
-      return Border();
+      return const Border();
     }
   }
 
